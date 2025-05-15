@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style3.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+             <div class="logo_container">
+            <svg class="logo-svg"  viewBox="0 0 100 100" width="60" height="60" fill="none">
+                <!-- Внешний круг -->
+                <circle cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="black" />
+        
+                <!-- Внутренние элементы -->
+                <path d="M30 50 A20 20 0 1 1 70 50 A20 20 0 1 1 30 50 Z" 
+                    stroke="white" 
+                    stroke-width="2" 
+                    fill="black"
+                />
+                <circle cx="50" cy="50" r="8" fill="white" />
+                <!-- Зрачок -->
+                    <circle cx="50" cy="50" r="4" fill="red" />
+
+                    <!-- Блик -->
+                    <circle cx="48.5" cy="48.5" r="1.2" fill="white" />
+                    <!-- Вписанный треугольник -->
+                    <polygon 
+                        points="50,4 11.2,84.8 88.8,84.8" 
+                        fill="none" 
+                        stroke="white" 
+                        stroke-width="2"
+                    />
+            </svg>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="index2.html">ГАЛЕРЕЯ</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="about-section">
+            <h1>О КВЕСТЕ</h1>
+            <div class="about-text">
+                <p>В "Лесу проклятых" вас ждет захватывающее путешествие в мир темных тайн и необъяснимых ужасов. Группа смельчаков оказывается в заброшенном лесу, где каждое дерево хранит свои секреты, а тени шепчут о проклятии, нависшем над этим местом. Вам предстоит разгадать загадки, столкнуться с потусторонними существами и преодолеть собственные страхи, чтобы выбраться из леса живым. Но будьте осторожны: не все, что кажется безопасным, на самом деле таковым является. Время на исходе, и каждое ваше решение может стать последним. Сможете ли вы выжить в "Лесу проклятых"?</p>
+            </div>
+            <input type="button" value="Бросить вызов" onclick="window.location.href='index.html#target-heading'">
+        </div>
+
+        </section>
+        <section class="support-section">
+            <h1>УЖЕ СХОДИЛИ НА КВЕСТ?</h1>
+            <h3>Оставьте ваши пожелания</h3>
+            <div class="form">
+                <input type="text" name="" id="">
+                <button>
+                    <span>Отправить</span>
+                </button>
+                
+            </div>
+            <div class="modal-overlay" id="successModal" style="display: none;">
+            <div class="modal-content">
+                <p>Успешно!</p>
+                <button class="close-modal">OK</button>
+            </div>
+        </div>
+        </section>
+        <script src="js/scripts3.js"></script>
+</body>
+</html>

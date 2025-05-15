@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: white;
+}
+body{
+    background: url("../images/main_bg.jpg") black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    align-items: center; /* Выравнивает элементы по вертикали */
+    padding: 20px; /* Добавляет отступы вокруг header */
+}
+
+.logo_container {
+    display: flex; /*Превращаем в гибкий контейнер*/
+    align-items: center;
+    gap: 10px; /* Отступ между SVG и текстом */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px; /* Отступ между пунктами меню */
+    list-style: none; /* Убирает маркеры списка */
+}
+
+nav li {
+    color: white;
+    cursor: pointer; /* Меняет курсор при наведении */
+    font-weight: bold; /* Делает текст жирным (опционально) */
+}
+
+
