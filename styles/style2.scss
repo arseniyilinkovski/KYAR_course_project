@@ -1,0 +1,470 @@
+// Custom font definitions
+$font-primary: 'Yaginya';
+$font-secondary: 'MazutSP';
+$heeader-color: rgba(213, 44, 44, 0.1); 
+$text-color: white;
+$header-text-size: clamp(1.5rem, 3.5vw, 4rem);
+$span-text-size: clamp(1.5rem, 3vw, 3rem);
+@font-face {
+  font-family: $font-primary;
+  src: url('../fonts/Yaginya.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-secondary;
+  src: url('../fonts/MazutSP-Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  
+  
+  /* Эффект размытия фона */
+  background-color: $heeader-color;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Для Safari */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .logo_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .logo-svg{
+      transition: filter 0.3s ease;
+      &:hover{
+        filter: drop-shadow(0 0 6px red);
+      }
+    }
+    span {
+      font-family: 'Yaginya', sans-serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      color: $text-color;
+      text-shadow: 
+        3px 3px 6px #000,
+        0 0 15px #ff0000;
+      letter-spacing: 3px;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    gap: clamp(40px, 5vw, 60px);
+    list-style: none;
+    padding: 15px 5px;
+    
+    li {
+      transition: all 0.4s;
+      a{
+        text-decoration: none;
+        font-family: 'MazutSP';
+        font-size: clamp(1.5rem, 3vw, 1.7rem);
+        text-transform: uppercase;
+        color: $text-color;
+        transition: all 0.4s;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px #000;
+        padding: 10px 15px;
+        position: relative;
+        &:hover{
+          color: #ff0000;
+        }
+       
+    }
+    &:hover {
+      
+      transform: scale(1.15);
+    }
+  }
+}
+}
+.wrapper{
+background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/galery-bg.jpg") no-repeat center center;
+    min-height: 100vh;
+}
+.award-section{
+  h1{
+    font-family: "MazutSP";
+    letter-spacing: 5px;
+    font-size: $header-text-size;
+    color: $text-color;
+    text-align: center;
+    margin: 50px;
+  }
+  .award-gallery{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    .award-image1{
+      height: 400px;
+      width: 400px;
+      background: url("../images/galery_awards1.png") no-repeat center center;
+      background-size: cover;
+      border-radius: 50px;
+    }
+    .award-image2{
+      height: 400px;
+      width: 400px;
+      background: url("../images/galery_awards2.png") no-repeat center center;
+      background-size: cover;
+      border-radius: 50px;
+    }
+    .award-image3{
+      height: 400px;
+      width: 400px;
+      background: url("../images/galery_awards3.png") no-repeat center center;
+      background-size: cover;
+      border-radius: 50px;
+    }
+    
+  }
+}
+.photo-wrapper{
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/galery-bg.jpg") no-repeat center center;
+ .photo-section{
+  .photo-gallery{
+
+    margin: auto;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    .photo-image1{
+      width: 400px;
+      height: 400px;
+      background: url("../images/photogalery1.png");
+      border-radius: 50px;
+      background-size: cover;
+    }
+    .photo-image2{
+      width: 400px;
+      height: 400px;
+      background: url("../images/photogalery2.png");
+      border-radius: 50px;
+      background-size: cover;
+    }
+    .photo-image3{
+      width: 400px;
+      height: 400px;
+      background: url("../images/photogalery3.png");
+      border-radius: 50px;
+      background-size: cover;
+    }
+    .photo-image4{
+      width: 400px;
+      height: 400px;
+      background: url("../images/photogalery4.png");
+      border-radius: 50px;
+      background-size: cover;
+    }
+  }
+  
+   h1{
+    font-family: "MazutSP";
+    letter-spacing: 5px;
+    font-size: $header-text-size;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+}
+}
+
+.famous_wrapper{
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/galery-bg.jpg") no-repeat center center;
+  .famous-section{
+    h1{
+      font-family: "MazutSP";
+    letter-spacing: 5px;
+    font-size: $header-text-size;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    .famous-gallery{
+    margin: auto;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    .famous-image1{
+      padding: 20px;
+      div{
+        background: url("../images/Dima_Maslen.jpg");
+        width: 400px;
+        background-size: cover;
+        height: 400px;
+        border-radius: 50px;
+      }
+      span{
+        font-family: "Yaginya";
+        font-size: $span-text-size;
+        color: $text-color;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+    }
+    .famous-image2{
+      padding: 20px;
+      div{
+        background: url("../images/Gosling.JPG");
+        width: 400px;
+        background-size: cover;
+        height: 400px;
+        border-radius: 50px;
+      }
+      span{
+        font-family: "Yaginya";
+        font-size: $span-text-size;
+        color: $text-color;
+        padding: 10px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+    }
+    .famous-image3{
+      padding: 20px;
+      div{
+        background: url("../images/skala.jpg");
+        width: 400px;
+        background-size: cover;
+        height: 400px;
+        border-radius: 50px;
+      }
+      span{
+        font-family: "Yaginya";
+        font-size: $span-text-size;
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+      
+    }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  header nav ul {
+    gap: 30px;
+  }
+  .award-section{
+    .award-gallery{
+      .award-image1, .award-image2, .award-image3{
+        height: 250px;
+        width: 300px;
+      }
+    }
+  }
+  .photo-section{
+    .photo-gallery{
+      .photo-image1, .photo-image2, .photo-image3, .photo-image4{
+        height: 250px;
+        width: 300px;
+      }
+    }
+  }
+  .famous-section{
+    .famous-gallery{
+      .famous-image1, .famous-image2, .famous-image3{
+        height: 250px;
+        width: 300px;
+        span{
+          font-size: clamp(1.3rem, 2.5vw, 2rem);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  header{
+    flex-direction: column;
+    gap: 30px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    .logo_container{
+      margin-right: 0;
+      
+      span{
+        color: white;
+        font-family: "Yaginya";
+        text-align: center;
+        font-size: clamp(2rem, 6vw, 2.5rem);
+      }
+    }
+    nav ul{
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .award-section{
+    .award-gallery{
+      .award-image1, .award-image2, .award-image3{
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+  .photo-section{
+    .photo-gallery{
+      .photo-image1, .photo-image2, .photo-image3{
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}
+}
+@media (max-width: 768px) {
+  .famous_wrapper {
+    .famous-section {
+      h1 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem);
+      }
+      
+      .famous-gallery {
+        gap: 40px;
+        
+        .famous-image1,
+        .famous-image2,
+        .famous-image3 {
+          div {
+            width: 250px;
+            height: 250px;
+            border-radius: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 576px) {
+  .award-section{
+    .award-gallery{
+      .award-image1, .award-image2, .award-image3{
+        width: 200px;
+        border-radius: 50px;
+        height: 200px;
+      }
+    }
+  }
+  .photo-section{
+    .photo-gallery{
+      .photo-image1, .photo-image2, .photo-image3, .photo-image4{
+        width: 200px;
+        border-radius: 50px;
+        height: 200px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .famous_wrapper {
+    .famous-section {
+      .famous-gallery {
+        gap: 30px;
+        
+        .famous-image1,
+        .famous-image2,
+        .famous-image3 {
+          div {
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+          }
+          
+          span {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 400px) {
+  .award-section{
+    .award-gallery{
+      .award-image1, .award-image2, .award-image3{
+        width: 150px;
+        border-radius: 40px;
+        height: 150px;
+      }
+    }
+  }
+  .photo-section{
+    .photo-gallery{
+      .photo-image1, .photo-image2, .photo-image3, .photo-image4{
+        width: 150px;
+        border-radius: 40px;
+        height: 150px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .famous_wrapper {
+    .famous-section {
+      .famous-gallery {
+        gap: 30px;
+        
+        .famous-image1,
+        .famous-image2,
+        .famous-image3 {
+          div {
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+          }
+          
+          span {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+          }
+        }
+      }
+    }
+  }
+}

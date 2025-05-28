@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror-quest</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>         
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="logo_container">
+            <svg class="logo-svg"  viewBox="0 0 100 100" width="60" height="60" fill="none">
+                <!-- Внешний круг -->
+                <circle cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="black" />
+        
+                <!-- Внутренние элементы -->
+                <path d="M30 50 A20 20 0 1 1 70 50 A20 20 0 1 1 30 50 Z" 
+                    stroke="white" 
+                    stroke-width="2" 
+                    fill="black"
+                />
+                <circle cx="50" cy="50" r="8" fill="white" />
+                <!-- Зрачок -->
+                    <circle cx="50" cy="50" r="4" fill="red" />
+
+                    <!-- Блик -->
+                    <circle cx="48.5" cy="48.5" r="1.2" fill="white" />
+                    <!-- Вписанный треугольник -->
+                    <polygon 
+                        points="50,4 11.2,84.8 88.8,84.8" 
+                        fill="none" 
+                        stroke="white" 
+                        stroke-width="2"
+                    />
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index3.html">О КВЕСТЕ</a></li>
+                <li><a href="index2.html">ГАЛЕРЕЯ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-section">
+        <h1>ЛЕС ПРОКЛЯТЫХ</h1>
+        <h2>Что скрывает таинственный лес?</h2>
+    </section>
+</div>
+
+
+  
+  <section class="difficulty-section">
+    <div class="cards-container">
+      <button class="slider-btn left">&#10094;</button>
+      <div class="slider-track">
+        <div class="card active">
+          <h3>ЛЕГКО</h3>
+          <div class="list-element">
+            <div class="man-container">
+                <img src="images/icon_man.png" alt="man">
+                <p>3 - 12</p>
+            </div>
+            <div class="time-container">
+              <img src="images/icon_clock.png" alt="clock">
+              <p>30 min</p>
+            </div>
+            <div class="age16-container">
+                <img src="images/icon_16+.png" alt="age">
+            </div>
+            <div class="actor-container">
+                <img src="images/icon_actor.png" alt="actor">
+              <p>3</p>
+            </div>
+          </div>
+          <p>Идеально для новичков. Простые загадки и много подсказок, чтобы насладиться атмосферой без стресса</p>
+        </div>
+        <div class="card">
+          <h3>НОРМАЛЬНО</h3>
+          <div class="list-element">
+            <div class="man-container">
+               <img src="images/icon_man.png" alt="man">
+              <p>3 - 9</p>
+            </div>
+            <div class="time-container">
+            <img src="images/icon_clock.png" alt="clock">
+              <p>45 min</p>
+            </div>
+            <div class="age16-container">
+                <img src="images/icon_16+.png" alt="age">
+            </div>
+            <div class="actor-container">
+                <img src="images/icon_actor.png" alt="actor">
+              <p>6</p>
+            </div>
+          </div>
+          <p>Для опытных игроков. Загадки сложнее, требуется командная работа и смекалка, подсказки доступны, но не так часто</p>
+        </div>
+        <div class="card">
+          <h3>СЛОЖНО</h3>
+          <div class="list-element">
+            <div class="man-container">
+                <img src="images/icon_man.png" alt="man">
+                <p>3 - 6</p>
+            </div>
+            <div class="time-container">
+                <img src="images/icon_clock.png" alt="clock">
+                <p>60 min</p>
+            </div>
+            <div class="age16-container">
+                <img src="images/icon_18+.png" alt="age">
+            </div>
+            <div class="actor-container">
+                <img src="images/icon_actor.png" alt="actor">
+              <p>12</p>
+            </div>
+          </div>
+         <p>Для искателей острых ощущений. Сложные загадки, редкие подсказки и напряженная атмосфера. Готовьтесь к настоящему испытанию</p>
+        </div>
+      </div>
+      <button class="slider-btn right">&#10095;</button>
+    </div>
+  </section>
+
+    <section class="note-section">
+        <h1 id="target-heading">ЗАПИСЬ НА КВЕСТ</h1>
+        <div class="note-container">
+        <div class="name-container">
+            <p>ИМЯ</p>
+            <input type="text" name=""  placeholder="Фредди Крюгер">
+        </div>
+        <div class="telephone_number-container">
+            <p>НОМЕР ТЕЛЕФОНА</p>
+            <input type="tel" name=""  placeholder="+375 33 3800307">
+        </div>
+        <div class="email-container">
+            <p>ВАШ EMAIL</p>
+            <input type="email" name=""  placeholder="example@mail.ru">
+        </div>
+        <div class="difficulty-container">
+            <p>УРОВЕНЬ СЛОЖНОСТИ</p>
+            <select name="categories" id="categories" >
+                <option value="easy" style="color: black;  background-color: rgba(200, 0, 0, 0.2);">Легко</option>
+                <option value="normal" style="color: black;  background-color: rgba(200, 0, 0, 0.2);">Нормально</option>
+                <option value="dificult" style="color: black; background-color: rgba(200, 0, 0, 0.2);">Ужасно</option>
+            </select>
+        </div>
+        </div>
+        <button>
+            <span>Записаться</span>
+        </button>
+        <div class="bg-image image1"> </div>
+       
+        <div class="bg-image image2"></div>
+        <div class="modal-overlay" id="successModal" style="display: none;">
+            <div class="modal-content">
+                <p>Вы успешно записались</p>
+            </div>
+        </div>
+    </section>
+    <footer>    
+        <div class="contact-container">
+            <p id="contacts">Свяжитесь с нами</p>
+            <p>+375 33 381 56 97, Арсений</p>
+        </div>
+        <div class="social_links-container">
+            <p>Мы в соцсетях</p>
+            <ul>
+                <li>Instagram</li>
+                <li>VK</li>
+                <li>Telegram</li>
+                <li>WhatsApp</li>
+            </ul>
+        </div>
+        <p>2021-2025©Все права защищены</p>
+        <div class="footer-bg-image image1"></div>
+        <div class="footer-bg-image image"></div> 
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
